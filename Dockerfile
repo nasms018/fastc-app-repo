@@ -8,5 +8,5 @@ COPY . .
 RUN npm install http-server -g
 # Listen 포트 정의
 EXPOSE 8080
-# 서버 기동 (강의 영상 > npm start에서 변경, 수정하지 말 것)
+# 서버 기동 (강의 영상 > npm start에서 변경, 수정하지 말 것)   ["npm", "start"]
 CMD ["http-server", "./dist"]
